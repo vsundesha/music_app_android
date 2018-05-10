@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.example.android.music;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,14 +18,13 @@ public class SongActivity extends AppCompatActivity {
         passedName=getIntent().getStringExtra("name");
         TextView name=(TextView)findViewById(R.id.name);
         name.setText(passedName);
+
         passedDuration=getIntent().getStringExtra("duration");
         TextView duration=(TextView)findViewById(R.id.duration);
         duration.setText(passedDuration);
+
         passedArtist=getIntent().getStringExtra("artist");
         TextView artist=(TextView)findViewById(R.id.artist);
         artist.setText(passedArtist);
-        System.out.println(passedArtist+""+passedDuration+""+passedName);
-
-
     }
 }

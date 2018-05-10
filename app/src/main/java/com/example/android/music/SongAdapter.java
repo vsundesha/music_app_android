@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.example.android.music;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -16,7 +16,6 @@ public class SongAdapter extends ArrayAdapter<Song> {
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
@@ -24,11 +23,8 @@ public class SongAdapter extends ArrayAdapter<Song> {
         }
 
         Song currentSong = getItem(position);
-
         TextView TextView = (TextView) listItemView.findViewById(R.id.text_view);
-
         TextView.setText(currentSong.getName());
-
         return listItemView;
     }
 }

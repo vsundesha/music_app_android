@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.miwok;
+package com.example.android.music;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -49,9 +49,6 @@ public class MainActivity extends AppCompatActivity {
         songs.add(new Song("stone man",3.33,"Slack Babbath"));
         songs.add(new Song("when the mary cries wind",3.33,"jimmy henries"));
 
-
-
-
         SongAdapter adapter = new SongAdapter(this,songs);
         ListView listView = (ListView) findViewById(R.id.list);
 
@@ -67,7 +64,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(numbersIntent);
             }
         });
-
-
     }
 }

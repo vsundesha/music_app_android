@@ -1,4 +1,4 @@
-package com.example.android.miwok;
+package com.example.android.music;
 
 public class Song {
     private String name;
