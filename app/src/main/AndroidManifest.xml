@@ -29,7 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.music.SongActivity" android:label="@string/category_song"/>
+        <activity android:name="com.example.android.music.SongActivity" android:label="@string/category_song" android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
